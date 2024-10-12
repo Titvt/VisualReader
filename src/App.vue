@@ -1,9 +1,15 @@
 <script setup>
+import { ref } from 'vue'
 
+const text = ref('Visual Reader')
 </script>
 
 <template>
-    Visual Reader
+    <Button>{{ text }}</Button>
 </template>
 
-<style scoped></style>
+<style>
+body {
+    margin: 0;
+}
+</style>
